@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth Patel | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #0c4a6e, #1e293b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .glass-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+
+  .glass-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .shadow-text {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  }
+  </style>
+</head>
+<body class="text-white font-sans transition duration-300">
+
+  <!-- Social Links -->
+<div class="w-full flex justify-end p-6 space-x-4 absolute top-0 right-0 z-50">
+  <!-- GitHub Icon -->
+  <a href="https://github.com/CodingRaemajor" target="_blank" class="text-gray-300 hover:text-white">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.799 8.205 
+           11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416
+           -.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729
+           1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997
+           .108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.332-5.467-5.93
+           0-1.31.467-2.381 1.235-3.221-.124-.303-.535-1.523.117-3.176
+           0 0 1.008-.322 3.3 1.23.96-.267 1.98-.4 3-.403 1.02.003 2.04.136
+           3 .403 2.29-1.552 3.3-1.23 3.3-1.23.654 1.653.243 2.873.12 3.176
+           .77.84 1.23 1.91 1.23 3.221 0 4.61-2.807 5.625-5.48 5.922.43.372
+           .823 1.102.823 2.222v3.293c0 .32.216.69.825.575C20.565 21.796 
+           24 17.298 24 12c0-6.63-5.373-12-12-12z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn Icon -->
+  <a href="https://www.linkedin.com/in/parth-patel-4036272a4/" target="_blank" class="text-gray-300 hover:text-white">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 
+        0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3
+        c-.966 0-1.75-.784-1.75-1.75s.784-1.75 
+        1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 
+        11.3h-3v-5.6c0-1.337-.026-3.063-1.867-3.063-1.868 
+        0-2.154 1.459-2.154 2.963v5.7h-3v-10h2.881v1.367h.041c.401-.762 
+        1.379-1.563 2.839-1.563 3.036 0 3.6 2.001 3.6 4.602v5.594z"/>
+    </svg>
+  </a>
+</div>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative">
+    <div>
+      <h1 class="text-5xl font-extrabold mb-4 shadow-text" data-aos="fade-up">Parth Patel</h1>
+      <p class="text-lg text-gray-300 mb-6" data-aos="fade-up" data-aos-delay="100">
+        Software Engineering Student • AI & Cybersecurity Enthusiast
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="ParthPatel_Professional.pdf" download
+           class="glass-button px-6 py-2 rounded-lg font-semibold hover:scale-105 transition"
+           data-aos="zoom-in" data-aos-delay="200">
+           📄 Download Resume
+        </a>
+        <button onclick="toggleDarkMode()"
+                class="glass-button px-6 py-2 rounded-lg font-semibold hover:scale-105 transition"
+                data-aos="zoom-in" data-aos-delay="300">
+          🌓 Toggle Dark Mode
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="p-8 bg-gray-800 bg-opacity-40">
+    <div class="max-w-3xl mx-auto" data-aos="fade-right">
+      <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">About Me</h2>
+      <p class="text-gray-300 leading-relaxed text-lg">
+        I am a passionate and driven Computer Science student at the University of Regina, specializing in software engineering with a strong focus on artificial intelligence, machine learning, and cybersecurity. <br><br>
+        I thrive on building intelligent systems that solve real-world problems — from AI-powered health solutions and secure chatbots to automation tools and real-time analytics platforms. I am deeply interested in the intersection of AI and cybersecurity, and I actively explore ways to leverage modern technology to enhance digital safety and efficiency. <br><br>
+        With hands-on experience in full-stack development, cloud tools (like AWS), and frameworks such as Streamlit, Flask, and Salesforce Agentforce, I bring both technical skill and creative thinking to every project. Whether it's building scalable applications or researching cutting-edge tech, I am committed to turning innovative ideas into impactful digital experiences.
+      </p>
+      <p class="text-blue-400 italic mt-4 text-center text-lg">
+        “I don’t just write code — I engineer solutions that think, protect, and evolve.”
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="p-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 border-b border-gray-600 pb-2" data-aos="fade-up">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">MediLink AI</h3>
+          <p class="text-gray-300">Health alert system for rural areas using AWS, Streamlit, SNS.</p>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">FraudGuardAI</h3>
+          <p class="text-gray-300">Phishing detection chatbot built using Salesforce Agentforce for banking security.</p>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-semibold mb-2">UnknownAI</h3>
+          <p class="text-gray-300">Knowledge-based chatbot using Flask, JSON intents and context awareness.</p>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-semibold mb-2">IoT Anomaly Detector</h3>
+          <p class="text-gray-300">Real-time dashboard using ML to detect unusual sensor behavior in IoT systems.</p>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-xl font-semibold mb-2">Reddit Bot</h3>
+          <p class="text-gray-300">My first Python project — automated Reddit posting using their public API.</p>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-40 p-4 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="600">
+          <h3 class="text-xl font-semibold mb-2">Deepfake Face Swap</h3>
+          <p class="text-gray-300">Real-time face swap tool with seamless blending and live Streamlit preview.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="p-8 bg-gray-800 bg-opacity-40">
+    <div class="max-w-3xl mx-auto text-center" data-aos="fade-in">
+      <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">Contact Me</h2>
+      <p class="text-gray-300 mb-4">📧 <a href="mailto:iparth2166@gmail.com" class="underline">iparth2166@gmail.com</a></p>
+      <p class="text-gray-300">Let’s collaborate or just say hi!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 py-6" data-aos="fade-up">
+    © 2025 Parth Patel. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function toggleDarkMode() {
+      document.body.classList.toggle('bg-white');
+      document.body.classList.toggle('text-black');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    }
+  </script>
+</body>
+</html>
